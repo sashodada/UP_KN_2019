@@ -41,12 +41,12 @@ cout << (ptrA == ptrB);  // 0 (false)
 Извършвва се, взимайки се предвид типа на променливата, към която указателят сочи и се прибавят/изваждат съответния брой байтове към адреса.
 ```cpp
 int a = 5;
-    int *ptrA = &a;
-    cout << ptrA << endl; // например адрес: 0x60ff00
-    cout << ++ptrA << endl; // тип int, тоест + 4В 0x60ff04
-    cout << --ptrA << endl; // тук се изваждат 4В -> 0x60ff00
-    ptrA += 3;  // прибавят се 3 * 4В -> ptrA = 0x60ff0c
-    cout << ptrA;
+int *ptrA = &a;
+cout << ptrA << endl; // например адрес: 0x60ff00
+cout << ++ptrA << endl; // тип int, тоест + 4В 0x60ff04
+cout << --ptrA << endl; // тук се изваждат 4В -> 0x60ff00
+ptrA += 3;  // прибавят се 3 * 4В -> ptrA = 0x60ff0c
+cout << ptrA;
 ```
 
 
@@ -70,7 +70,8 @@ int maxNum(int *pA, int *pB)
     return (*pA > *pB) ? *pA : *pB;
 }
 
-int main() {
+int main() 
+{
     int a, b;
     cin >> a;
     cin >> b;
