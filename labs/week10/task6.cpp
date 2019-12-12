@@ -54,5 +54,4 @@ int main()
     }
 
     cout << fibonacciMem(n, mem);
-    cout << mem[12];
 }
