@@ -52,7 +52,7 @@ int main()
     int n = -1;
     while(n < 0) 
     {
-        cout << "Enter a positive number: ";
+        cout << "Enter a non-negative number: ";
         cin >> n;
     }
     cout << sumsCount(n);
